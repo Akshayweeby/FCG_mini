@@ -13,7 +13,7 @@ if not exist "build\Release\LakeF1.exe" (
         pause
         exit /b 1
     )
-    cmake -S . -B build
+    cmake -S . -B build -G "Visual Studio 17 2022" -A x64
     if errorlevel 1 (
         echo.
         echo CMake configuration failed. Check the error above.

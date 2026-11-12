@@ -17,4 +17,9 @@ CMake fetches GLFW, GLM, and GLAD on the first configure. Internet access is req
 
 ## Controls
 
-W/Up accelerates, S/Down brakes/reverses, A/D or arrow keys steer, and left mouse drag orbits the camera. The track and buildings are intentionally simple and editable in `drawTrack()`.
+- **W** accelerates, **S** brakes and reverses.
+- **A** turns left, **D** turns right.
+- **Mouse movement** turns the car (move right to turn right). The mouse is captured on start; press **Esc** to free it and left-click to capture it again.
+- **C** toggles top-down view, **R** resets the car.
+
+The camera follows behind the car. The track and buildings are intentionally simple and editable in `drawTrack()`.
